@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> AboutUs\MENTAL HEALTH CARE </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: lemonchiffon;
+        }
+
+        .footer_quick_link {
+            list-style-type: none;
+            margin: 50px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .quick_link a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .quick_link a:hover {
+            background-color: #111;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+            border-radius: 20px 0px;
+        }
+
+        .icon-bar a {
+            float: center;
+            width: 100%;
+            text-align: left;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 38px;
+            font-family: 'Stencil';
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+            border-radius: 50px;
+        }
+
+        .active {
+            background-color: rgb(59, 58, 58);
+            border-radius: 50px;
+        }
+
+        .list {
+            background-color: transparent;
+            text-align: left;
+        }
+
+        .last {
+            height: 50px;
+            width: 100%;
+            margin: 0px 0px -28px 0px;
+        }
+
+        .button {
+            text-align: center;
+            font-size: 28px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 1px;
+            border-radius: 50px;
+        }
+
+        .button span {
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 10px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        h1 {
+            display: block;
+        }
+
+        .navbar {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 42px;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: inline-flex;
+            justify-content: space-around;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 5px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            color: #fefafa;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        aside {
+            margin-top: 25px;
+            margin-left: 250px;
+            float: left;
+            /* font-style: italic; */
+            background-color: transparent;
+            border: 2px solid rgb(4, 17, 158);
+            width: 580px;
+            height: 850px;
+            text-align: center;
+            /* border-radius: 15PX 15px 0px 0px; */
+            /* color: #84032e; */
+            /* padding: 10px 5px 10px 5px; */
+        }
+
+        aside1 {
+            position: relative;
+            margin-top: 25px;
+            margin-right: 200px;
+            float: right;
+            /* font-style: italic; */
+            background-color: transparent;
+            border: 2px solid rgb(4, 17, 158);
+            width: 400px;
+            height: 500px;
+            text-align: center;
+            /* border-radius: 15PX 15px 0px 0px; */
+            /* color: #84032e; */
+            /* padding: 10px 5px 10px 5px; */
+        }
+
+        .about {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: justify;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            justify-content: center;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #050505;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(202, 11, 11);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .zone {
+            font-size: 25px;
+            font-family: 'Times New Roman';
+            align-items: center;
+        }
+
+        .zone:hover {
+            opacity: 0.7;
+            align-content: center;
+            transition: 0.3s;
+            padding: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;"><a href="C:\Users\rites\Desktop\Major Project\home.html"><img class="logo"
+                src="logo1.png" alt="Mental Health Care"></a></div>
+    <nav class="navbar" width="100%">
+        <ul class="icon-bar">
+            <li class="button"><a href="home.html" tabindex="2"><i class="fa-solid fa-house fa-2xs"
+                        style="color: #f8f9fc;"></i><span> Home</span></a></li>
+            <li class="button"><a href="services.html" tabindex="2"><i class="fa-regular fa-calendar-check fa-2xs"
+                        style="color: #f5f7f9;"></i><span>
+                        Services </span> </a></li>
+            <li class="button"><a href="#" tabindex="10">
+                    <div class="dropdown">
+                        <span><i class="fa-solid fa-location-dot fa-2xs" style="color: #fcfcfc;"></i> Our Center</span>
+                        <div class="dropdown-content">
+                            <div class="dropdown">
+                                <a href="delhicentre.html" alt="Delhi Zone" target="_blank">
+                                    <p class="zone">Delhi</p>
+                                </a>
+                                <a href="biharcentre.html" alt="Bihar Zone" target="_blank">
+                                    <p class="zone">Bihar</p>
+                                </a>
+                                <a href="punjabcentre.html" alt="Punjab Zone" target="_blank">
+                                    <p class="zone">Punjab</p>
+                                </a>
+                            </div>
+                        </div>
+                </a></li>
+            <li class="button"><a class="active" href="aboutus.html" tabindex="2"><i
+                        class="fa-solid fa-circle-info fa-2xs" style="color: #f6efef;"></i><span>
+                        About Us </span> </a></li>
+        </ul>
+    </nav>
+
+
+    <aside>
+        <div>
+            <h2>About Health Care Centre</h2>
+            <p class="about">At MENTAL HEALTH CARE CENTRE, we believe in the transformative power of meditation to enhance both the
+                body and the mind. Nestled at the intersection of ancient wisdom and modern living, our platform is
+                dedicated to bringing the gift of health care to individuals seeking balance, strength, and serenity in their
+                lives.
+            </p>
+            <h2>Importance of Health Care Centre</h2>
+            <p class="about">Participating in physcial classes and practice can ease loneliness and provide an environment for group
+                healing and support. Even during one-on-one sessions loneliness is reduced as one is acknowledged as a
+                unique individual, being listened to and participating in the creation of a personalized care plan.
+            </p>
+            <h2>Objectives of health care center?</h2>
+            <p>
+                <li style="text-align: left; margin: 5px 10px 5px 10px;">To enable the student to have good health.</li>
+                <li style="text-align: left; margin: 5px 10px 5px 10px;">To practice mental hygiene.</li>
+                <li style="text-align: left; margin: 5px 10px 5px 10px;">To possess emotional stability.</li>
+                <li style="text-align: left; margin: 5px 10px 5px 10px;">To integrate moral values.</li>
+            </p>
+            <h2>A Practical Resource for the Spiritual Student</h2>
+            <p class="about">Discover the timeless wisdom of India and the health path to freedom. This site offers you a
+                wealth of practical and thought-provoking knowledge about the Oriental origins of the
+                simple and classic tradition of health and the healthy Life.
+            </p>
+            <h2>What you will discover</h2>
+            <p class="about">Featuring articles and contents (wikipedia) on Original care centre, and our health series, as
+                well as a weekly blog and frequent Podcasts, and also an eLibrary where readers can
+                read free of cost on this site. Explore our Home Page and our drop-down menu
+                in the header to begin to delve into Medical Health Care Centre.</p>
+        </div>
+    </aside>
+
+    <aside1>
+
+    </aside1>
+
+    <div>
+        <img class="last" src="Last Line.gif" alt="Thanks you..! Visit Again.">
+    </div>
+
+    <!-- FOOTER BEGINS FROM HERE -->
+
+    <footer>
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p> <i class="fa-solid fa-tty fa-shake"></i> Phone:<br> 06243 223033</i></p>
+            <p><i class="fa fa-phone fa-beat"></i> Mobile: <br> +91 99738 47484</p>
+            <p> <i class="fa-solid fa-envelope fa-beat"></i> Email:<br> riteshuic@gmail.com </p>
+            <p><br> <a href="https://www.facebook.com/ritesh.kumarraushan.3" target="_blank"><i
+                        class="fa-brands fa-facebook fa-2xl" style="color:#4267B2;"></a></i>
+                <a href="https://wa.me/+919973847484" target="_blank"> <i class="fa-brands fa-whatsapp fa-2xl"
+                        style="color: #2aa607;"></a></i>
+                <a href="https://www.instagram.com/ritesh139149/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-2xl" style="color: #E1306C ;"></a></i>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h2 style="margin-left: 15px;">About Us</h2>
+            <p style="font-weight: bold;margin-left: 15px;text-align: justify;">Welcome to Medical Health Care Centre
+
+            <p style="margin-left: 15px;text-align: justify;">At MEDICAL HEALTH CARE CENTRE, the intersection of ancient
+                wisdom and modern living, our platform is dedicated to bringing the gift of healthy mind to individuals
+                seeking balance, strength, and serenity in their lives.
+            </p>
+
+            <h3 style="margin-left: 15px;">Join Our Community</h3>
+
+            <p style="margin-left: 15px;text-align: justify;">Whether you have any stress problem or health problem, we
+                invite you to be a part of our growing
+                community. Connect with like-minded individuals, share your experiences, and embark on a path of
+                self-discovery together. At MEDICAL HEALTH CARE CENTRE, we believe in the power of community to uplift,
+                inspire, and transform lives.</p>
+
+            <p style="margin-left: 15px;">
+                Thanks & Regards,<br><br>
+                Mr. RITESH KUMAR<br>
+                Founder, MENTAL HEALTH CARE</p>
+        </div>
+
+        <div class="footer-section">
+            <h2 style="margin-left: 20px;">Quick Links</h2>
+            <ul class="footer_quick_link">
+                <li class="quick_link"><a href="home.html"> Home </a></li>
+                <li class="quick_link"><a href="services.html"> Services </a></li>
+                <li class="quick_link"><a href="aboutus.html"> About </a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
